@@ -8,36 +8,52 @@ body {
     flex-direction: column;
 }
 
+/* --- HEADER --- */
+
 .header {
     background-color: #1F2937;
-    padding: 0 80px 80px;
+    padding: 1vh 20vh;
 }
 
-h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    color: #F9FAF8;
+.header-text-container {
+    align-items: center;
+    width: 1000px;
+    display: flex;
+    gap: 20px;
 }
 
-.header > h2 {
+.header-text > h2 {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
 }
 
-.header > p {
+.header-text > p {
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.header > button {
+.header-text > button {
     background-color: #3882F6;
     color: white;
     border: none;
     padding: 10px 30px;
     cursor: pointer;
     border-radius: 10px;
+}
+
+.header-text-container > img {
+    /* width: 50%; */
+    margin: 20px;
+}
+
+/* --- NAVBAR --- */
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 ul {
@@ -59,10 +75,20 @@ a {
     color: #E5E7EB;
 }
 
+/* --- IMAGE GALLERY --- */
+
 .body-images {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5vh 20vh;
+}
+
+.body-images > h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin: 0 0 50px;
 }
 
 .container-imgs {
@@ -75,11 +101,14 @@ a {
     height: 200px;
 }
 
+/* --- QUOTE --- */
+
 .quote {
     background-color: #E5E7EB;
     display: flex;
     justify-content: center;
-    padding: 80px;
+    /* padding: 80px; */
+    padding: 10vh 30vh;
 }
 
 .quote > p {
@@ -89,13 +118,23 @@ a {
     color: #1F2937;
 }
 
-.call-box {
-    background-color: #3882F6;
+/* --- CALL TO ACTION BANNER --- */
+
+.call-box-container {
+    padding: 10vh 20vh;
 }
+
+.call-box {
+    display: flex;
+    background-color: #3882F6;
+    padding: 50px;
+}
+
+/* --- FOOTER --- */
 
 footer {
     background-color: #1F2937;
     text-align: center;
     color: #fff;
-    padding: 30px;
+    padding: 25px;
 }
